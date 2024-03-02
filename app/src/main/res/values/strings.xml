@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidArrayListApp</string>
+    <string name="string_arrow"><![CDATA[<]]></string>
+    <string name="forward_arrow"><![CDATA[>]]></string>
+</resources>

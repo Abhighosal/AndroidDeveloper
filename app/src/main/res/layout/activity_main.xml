@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ACC1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GlobalApp!"
+        android:textSize="25sp"
+        android:textColor="#8E24AA"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/txtGlobalData"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtGlobalData"
+        android:layout_margin="20dp"
+        android:hint="@string/enter_name"
+        android:textColorHint="#8E24AA"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:id="@+id/edtName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtName"
+        android:layout_margin="20dp"
+        android:hint="@string/enter_mobile_number"
+        android:textColorHint="#8E24AA"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:inputType="numberPassword"
+        android:id="@+id/edtMobileNumber"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtMobileNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#E53935"
+        android:text="Save"
+        android:textSize="25sp"
+        android:layout_marginStart="65sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/btnSave"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btnSave"
+        app:layout_constraintTop_toBottomOf="@id/edtMobileNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#E53935"
+        android:textSize="25sp"
+        android:text="View"
+        android:id="@+id/btnView"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
